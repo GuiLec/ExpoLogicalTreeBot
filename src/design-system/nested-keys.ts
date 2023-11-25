@@ -6,8 +6,8 @@ export type NestedKeys<T, Prefix extends string = ""> = T extends object
       >;
     }[keyof T]
   : Prefix extends ""
-  ? never
-  : // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  Prefix extends `${infer _Head}.${infer Tail}`
-  ? Tail
-  : never;
+    ? never
+    : // eslint-disable-next-line unused-imports/no-unused-vars
+      Prefix extends `${infer _Head}.${infer Tail}`
+      ? Tail
+      : never;

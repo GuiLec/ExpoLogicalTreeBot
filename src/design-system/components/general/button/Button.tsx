@@ -102,7 +102,6 @@ export const Button = ({
       textColor={contentColor}
       iconSize={iconSize}
       iconColor={contentColor}
-      loaderColor={contentColor}
       isStretched={isStretched}
       testID={testID}
       isTextUnderlined={isTextUnderlined}

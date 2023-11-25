@@ -15,7 +15,7 @@ export type CurrentColor = typeof CURRENT_COLOR_NAME;
 export const CurrentColorProvider = CurrentColorContext.Provider;
 
 export function useCurrentColor(
-  prioritisedColor: ColorKeyPaths | CurrentColor
+  prioritisedColor: ColorKeyPaths | CurrentColor,
 ): ColorKeyPaths {
   const currentColor = useContext(CurrentColorContext);
 

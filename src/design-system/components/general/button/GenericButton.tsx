@@ -24,7 +24,6 @@ type GenericButtonProps = {
   textColor: NestedKeys<Theme["colors"]>;
   iconColor: NestedKeys<Theme["colors"]>;
   iconSize: keyof Theme["sizes"]["icons"];
-  loaderColor: NestedKeys<Theme["colors"]>;
   style?: StyleProp<ViewStyle>;
 };
 

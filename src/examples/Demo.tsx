@@ -1,20 +1,19 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import styled from "@emotion/native";
+import { ThemeProvider } from "@emotion/react";
+import { SafeAreaView } from "react-native";
+import { theme } from "src/design-system/theme/theme";
+import { Chatbot } from "src/modules/chatbot/components/ChatBot";
 
 export const Demo = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ThemeProvider theme={theme}>
+      <StyledSafeAreaView>
+        <Chatbot />
+      </StyledSafeAreaView>
+    </ThemeProvider>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
+const StyledSafeAreaView = styled(SafeAreaView)({
+  flex: 1,
 });

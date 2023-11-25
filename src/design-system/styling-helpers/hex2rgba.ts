@@ -11,7 +11,7 @@ export const hex2rgba = (hex: string, alpha = 1) => {
     return `rgba(${r},${g},${b},${alpha})`;
   } catch (err) {
     console.warn(
-      `Could not use color ${hex} for rgba conversion, maybe it is not in hex format`
+      `Could not use color ${hex} for rgba conversion, maybe it is not in hex format`,
     );
     return hex;
   }

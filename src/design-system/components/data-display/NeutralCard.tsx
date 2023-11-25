@@ -55,7 +55,7 @@ const StyledGenericCard = styled(GenericCard)<{ stretches?: boolean }>(
     // We'll confirm this with more design
     backgroundColor: getColorWithKey(theme, "primary.contrastText"),
     ...theme.boxShadow.level1,
-  })
+  }),
 );
 
 const StyledTouchableOpacity = styled(TouchableOpacity)({

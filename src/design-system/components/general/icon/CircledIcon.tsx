@@ -36,5 +36,5 @@ const StyledCircle = styled.View<{ colorKey: ColorKeyPaths }>(
     borderRadius: 1_000_000,
     padding: theme.spacings.$2,
     backgroundColor: hex2rgba(getColorWithKey(theme, colorKey), 0.33),
-  })
+  }),
 );
